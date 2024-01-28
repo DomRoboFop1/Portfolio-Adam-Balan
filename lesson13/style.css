@@ -1,0 +1,259 @@
+html[theme = "light"] {
+    --primary-font-color: black;
+    --primary-background-color: white;
+    --main-background-color: #F4F2F6;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #D9D9D9;
+    background: var(--primary-background-color);
+    padding: 37px 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 24px;
+    color: var(--main-font-color);
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+.header-menu__link:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.main {
+    padding: 215px 0;
+    background: #F4F2F6;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-left__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--primary-font-color);
+    margin-bottom: 55px;
+}
+
+.main-left__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.about {
+    padding: 237px 0 100px;
+    width: 100%;
+    background: url(https://png.pngtree.com/background/20211217/original/pngtree-background-elegant-black-with-gold-line-side-3-picture-image_1576412.jpg) center/cover no-repeat;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about_title {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about_text {
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.about__img {
+    border-radius: 50px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.youtube {
+    background-color: rosybrown;
+    padding: 137px 0;
+}
+
+.youtube__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube__title {
+    font-size: 60px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.tiktok {
+    background-color: #121212;
+    padding: 137px 0;
+}
+
+.tiktok__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tiktok__title {
+    font-size: 60px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    color:black;
+}
+
+.event {
+    background-color: darkblue;
+    padding: 50px 0;
+}
+
+.event__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event__title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.event__btn {
+    width: 250px;
+    height: 55px;
+    border: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: all ease-in .2s;
+    font-size: 15px;
+}
+
+.event__btn:hover {
+    border-radius: 50px;
+    color: blue;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--primary-font-color);
+    font-style: italic;
+    border-bottom: var(--primary-font-color) 2px solid;
+    padding-bottom: 3px;
+    width: max-content;
+}
+
+.swiper-slide {
+    padding: 50px 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.swiper-text {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.swiper-slide:nth-of-type(1) {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+.swiper-slide:nth-of-type(2) {
+    background-color: blue;
+    font-size: 30px;
+}
+
+.swiper-slide:nth-of-type(3) {
+    background-color: red;
+    font-size: 30px;
+}
+
+.header-theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-theme__button {
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 16px;
+    width: 90px;
+    height: 30px;
+    border: 0;
+}
+
+.header-theme__button:nth-of-type(1) {
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.header-theme__button:nth-of-type(2) {
+    background-color: #121212;
+    color: white;
+    border: 1px solid white;
+}
+
+html[theme = "dark"] {
+    --primary-font-color: white;
+    --primary-background-color: black;
+    --main-background-color: #F4F2F6;
+}

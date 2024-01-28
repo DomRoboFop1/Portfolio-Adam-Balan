@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Сайт с дизайном</title>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img id="headerLogo" src="./img/header-logo.png" alt="header logo">
+                    </a>
+                    <div class="header-menu">
+                        <a href="#main" class="header-menu__link">Главная</a>
+                        <a href="#about" class="header-menu__link">О секции</a>
+                        <a href="#youtube" class="header-menu__link">???</a>
+                        <div class="header-theme">
+                            <button id="light" class="header-theme__button"> Light theme </button>
+                            <button id="dark" class="header-theme__button"> Dark theme </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main" id="main">
+                <div class="wrapper">
+                    <div class="main__wrapper">
+                        <div class="main-left">
+                            <h1 class="main-left__title">
+                                Это мой сайт
+                            </h1>
+                            <div id="mainText" class="main-left__text">
+
+                            </div>
+                        </div>
+                        <div class="main-right">
+                            <img src="./img/main-img.png" alt="main image" class="main-right__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="wrapper">
+                    <div class="about__wrapper">
+                        <h2 class="about_title">Секция с фоном</h2>
+                        <img src="https://znanie-sila.su/wp-content/uploads/2018/04/1497335468_landscape.jpg" alt="about image" class="about__img">
+                        <p class="about_text">
+                             С помощью свойства background можно задать фоновую картинку и изменить ещё много свойств для фона
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="youtube" id="youtube">
+                <div class="wrapper">
+                    <div class="youtube__wrapper">
+                        <h2 class="youtube__title">
+                            Видео с капибарами 
+                        </h2>
+                        <iframe width="800px" height="500px" src="https://www.youtube.com/embed/Zai_sFsQy9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="tiktok" id="tiktok">
+                <div class="wrapper">
+                    <div class="tiktok__wrapper">
+                        <h2 class="tiktok__title">
+                            Видео из тикток
+                        </h2>
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nagasakibiopark/video/7199903952983330050" data-video-id="7199903952983330050" style="max-width: 300px;" > <section> <a target="_blank" title="@nagasakibiopark" href="https://www.tiktok.com/@nagasakibiopark?refer=embed">@nagasakibiopark</a> masbro<a title="長崎バイオパーク" target="_blank" href="https://www.tiktok.com/tag/%E9%95%B7%E5%B4%8E%E3%83%90%E3%82%A4%E3%82%AA%E3%83%91%E3%83%BC%E3%82%AF?refer=embed">#長崎バイオパーク</a> <a title="capybara" target="_blank" href="https://www.tiktok.com/tag/capybara?refer=embed">#capybara</a> <a title="カピバラ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%AB%E3%83%94%E3%83%90%E3%83%A9?refer=embed">#カピバラ</a> <a target="_blank" title="♬ Капибара - Capybara - Сто-Личный Она-Нас" href="https://www.tiktok.com/music/Капибара-Capybara-7121057779804833794?refer=embed">♬ Капибара - Capybara - Сто-Личный Она-Нас</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+            </section>
+            <section class="event" id="event">
+                <div class="wrapper">
+                    <div class="event__wrapper">
+                        <h2 id="eventTitle" class="event__title">
+                            Секция событий:
+                        </h2>
+                        <div class="event__btns">
+                            <button onclick="alert('Событие в HTML')" class="event__btn">
+                                alert событие в HTML
+                            </button>
+                            <button onclick="message()" class="event__btn">
+                                alert функция из тега script
+                            </button>
+                            <button onclick="showMessage()" class="event__btn">
+                                Откат заголовка
+                            </button>
+                            <button onclick="changeTitle()" class="event__btn">
+                                Изменение заголовка
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="swiper-text">Яблоки</p>    
+                        <img src="https://photos1.blogger.com/blogger/2921/1916/1600/photoshop_apples.jpg" alt="apples">
+                    </div>
+                    <div class="swiper-slide">Второй слайд</div>
+                    <div class="swiper-slide">Третий слайд</div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                effect: 'flip',
+                autoplay: true,
+            });
+
+            const str = 'Hello!';
+            function hello() {
+                alert(str);
+            }
+
+            function message() {
+                alert( 'Функция из тега script внутри HTML' );
+            }
+        </script>
+
+
+        <script src="./script.js"></script>
+    </body> 
+</html>
