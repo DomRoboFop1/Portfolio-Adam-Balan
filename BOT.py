@@ -85,5 +85,5 @@ async def calculate(ctx, operation, num1: float, num2: float):
     if result is not None:
         await ctx.send(f'Result: {result}')
 
-bot.run("MTEyMjkyMzY0MjQzOTg2ODQ1Ng.G9oXUK.TJHUapeg2W12OQhNXQwgYC_JVU4giu2_KGQXnU")
+bot.run("")
 
